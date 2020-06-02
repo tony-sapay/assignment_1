@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/my_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">phliker</a>
+    </div>
+
+   <form class="navbar-form navbar-right" action="#">
+  <div class="input-group">
+    <input id="search_text" type="text" class="form-control" placeholder="Search by tags...">
+    <div class="input-group-btn">
+      <button id="search_button" class="btn btn-default" type="submit">
+        GO!
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+</nav>
+
+<div id="flickr">
+<div class="center-search-box" id="centersearch">
+    <div class="input-group" id="searchid">
+      <input  id="search_text2" type="text" class="form-control" placeholder="Search images">
+      <div class="input-group-btn">
+        <button id="search_button2" type="submit" id="searchbtn" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" class="imagepreview" style="width: 100%;" >
+          <br><hr>
+         <b><u>Owner</u></b> : <p id="owner"></p>
+            <b><u>Title</u></b> : <p id="title"></p>
+            <b><u>Country</u></b> : <p id="country"></p>
+            <b><u>Region</u></b> : <p id="region"></p>
+      </div>
+      <div class="modal-footer">
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="show-previous-image"> < Previous</button>
+                </div>
+
+                <div class="col-md-8 text-justify" id="image-gallery-caption">
+
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" id="show-next-image" class="btn btn-primary">Next ></button>
+                </div>
+            </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
